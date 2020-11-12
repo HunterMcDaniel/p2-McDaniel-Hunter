@@ -9,15 +9,24 @@ header img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 12%;
-  padding: 3%;
+  width: 15%;
+  padding: 1.8%;
 }
 
 nav{
   max-width: 100%;
-  background-color: green;
-  padding: 2%;
+  background-color: darkgreen;
+  padding: 1%;
   text-align: center;
+}
+
+a:link{
+  text-decoration: none;
+  color: white;
+}
+
+a:visited{
+  color: white;
 }
 
 nav ul li{
@@ -25,12 +34,30 @@ nav ul li{
   padding: 2%;
 }
 
-button{
-  width: 20%;
+#banner button{
+  width: 30%;
   padding: 2% 1% 2% 1%;
   position: absolute;
-  left: 10%;
-  top: 75%;
+  left: 8%;
+  top: 72%;
+  font-size: 1em;
+  background-color: lightblue;
+}
+
+#banner h2{
+  font-size: 2em;
+  width: 40%;
+  position: absolute;
+  left: 8%;
+  top: 20%;
+}
+
+#banner h4{
+  font-size: .8em;
+  width: 40%;
+  position: absolute;
+  left: 8%;
+  top: 50%;
 }
 
 #banner{
@@ -44,6 +71,8 @@ position: relative;
   width: 100%;
   max-height: 10%;
 }
+
+
 
 /*img grid Home*/
 
@@ -71,6 +100,80 @@ position: relative;
 
 /*learn section Home*/
 
-#learn {
-  padding: 0 4% 0 4%;
+#learn h2 {
+  max-width: 100%;
+  padding: 0% 0% 4% 0%;
+}
+
+#learn{
+  padding: 4%;
+}
+
+#learngrid{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#learngriditem{
+  width: 20%;
+  padding: 2%;
+}
+
+#learngriditem img{
+  max-width: 100%;
+}
+
+#learngrid button{
+  width:  100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*footer*/
+#footernav{
+  background-color: lightblue;
+}
+
+footer{
+  margin-bottom: 0;
+}
+/***** media queries******/
+
+@media (min-width: 750px) {
+  #banner h2{
+    font-size: 3.8em;
+    width: 40%;
+    position: absolute;
+    left: 8%;
+    top: 10%;
+  }
+
+  #banner h4{
+    font-size: 1.1em;
+    width: 40%;
+    position: absolute;
+    left: 8%;
+    top: 45%;
+  }
+}
+
+@media (min-width: 950px) {
+  #banner h2{
+    font-size: 4em;
+    width: 40%;
+    position: absolute;
+    left: 8%;
+    top: 15%;
+  }
+
+  #banner h4{
+    font-size: 1.4em;
+    width: 40%;
+    position: absolute;
+    left: 8%;
+    top: 45%;
+  }
 }
