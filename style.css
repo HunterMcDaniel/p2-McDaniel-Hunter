@@ -14,6 +14,7 @@ header img{
 }
 
 nav{
+  max-width: 100%;
   background-color: green;
   padding: 2%;
   text-align: center;
@@ -25,10 +26,19 @@ nav ul li{
 }
 
 button{
-  padding: 1% .5% 1% .5%;
+  width: 20%;
+  padding: 2% 1% 2% 1%;
+  position: absolute;
+  left: 10%;
+  top: 75%;
 }
 
 #banner{
 margin-top: .5%;
 align-items: center;
+position: relative;
+}
+
+#banner img{
+  width: 100%;
 }
