@@ -11,22 +11,84 @@
     <header>
       <img src="images/logor.png">
       <nav>
-        <ul>
+        <ul id="topnav">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="visit.html">Visit Us</a></li>
+          <li class="has-submenu">
+            <a href="visit.html">Visit Us</a>
+            <div class="menudrop condensed">
+              <ul class="visitmenu">
+                <li><a href="…">Photo Gallery</a></li>
+                <li><a href="…">Schedule a Visit</a></li>
+              </ul>
+            </div>
+          </li>
           <li><a href="stories.html">Animal Stories</a></li>
         </ul>
       </nav>
     </header>
     <!-- Main Section -->
   <main>
+    <section id="banner">
+      <img src="images/farmbg.png">
+      <button id="learnbutton"><a href="stories.html">Get Involved</a></button>
+      <h2>ANIMAL STORIES</h2>
+      <h4>Encouraging Compassion<br>Inspiring Change</h4>
+    </section>
+
+    <section id="learn">
+      <h2>LEARN MORE ABOUT OUR ANIMAL AMBASSADORS</h2>
+      <section id="learngrid">
+        <div id="learngriditem">
+          <img src="images/pinkpig.png">
+          <button id="gridbutton">Stella</button>
+        </div>
+        <div id="learngriditem">
+          <img src="images/moo.png">
+          <button id="gridbutton">Fluffy</button>
+        </div>
+        <div id="learngriditem">
+          <img src="images/goatie.png">
+          <button id="gridbutton">Larry</button>
+        </div>
+        <div id="learngriditem">
+          <img src="images/cowmoo.png">
+          <button id="gridbutton">Leo</button>
+        </div>
+        <div id="learngriditem">
+          <img src="images/bbygoat.png">
+          <button id="gridbutton">Holly</button>
+        </div>
+        <div id="learngriditem">
+          <img src="images/petting.png">
+          <button id="gridbutton">Poppy</button>
+        </div>
+          <div id="learngriditem">
+            <img src="images/boycow.png">
+        <button id="gridbutton">Temple</button>
+        </div>
+          <div id="learngriditem">
+            <img src="images/goatpet.png">
+        <button id="gridbutton">Lulu</button>
+        </div>
+
+    </section>
+
+
   </main>
   <!-- Footer -->
   <footer>
-
+    <nav id="footernav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="visit.html">Visit Us</a></li>
+        <li><a href="stories.html">Animal Stories</a></li>
+      </ul>
+    </nav>
   </footer>
-  <script src="lib/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

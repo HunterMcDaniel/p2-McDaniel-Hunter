@@ -11,11 +11,19 @@
     <header>
       <img src="images/logor.png">
       <nav>
-        <ul>
+        <ul id="topnav">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="visit.html">Visit Us</a></li>
+          <li class="has-submenu">
+            <a href="visit.html">Visit Us</a>
+            <div class="menudrop condensed">
+              <ul class="visitmenu">
+                <li><a href="…">Photo Gallery</a></li>
+                <li><a href="…">Schedule a Visit</a></li>
+              </ul>
+            </div>
+          </li>
           <li><a href="stories.html">Animal Stories</a></li>
         </ul>
       </nav>
@@ -23,10 +31,13 @@
     <!-- Main Section -->
     <main>
       <section id="banner">
-        <img src="images/chicken.png">
-        <button id="learnbutton">Learn More</button>
-        <h2>Rooterville</h2>
+        <img src="images/farmbg.png">
+        <button id="learnbutton">
+          <a href="stories.html">Learn More</a>
+        </button>
+        <h2>ROOTERVILLE</h2>
         <h4>Encouraging Compassion<br>Inspiring Change</h4>
+        <p>Rooterville Animal Sanctuary, located in Melrose, FL, provides a safe and compassionate refuge to rescued farm animals.</p>
       </section>
 
       <section id="grid">
@@ -52,8 +63,8 @@
 
 
       <section id="learn">
-        <h2>Learn More About Rooterville</h2>
-        <section id="learngrid">
+          <h2>LEARN MORE ABOUT ROOTERVILLE</h2>
+          <section id="learngrid">
           <div id="learngriditem">
           <img src="images/moo.png">
           <button id="gridbutton">Learn More</button>
@@ -75,18 +86,46 @@
           <button id="gridbutton">Learn More</button>
           </div>
           <div id="learngriditem">
-          <img src="images/moo.png">
+          <img src="images/petting.png">
           <button id="gridbutton">Learn More</button>
           </div>
           <div id="learngriditem">
-          <img src="images/moo.png">
+          <img src="images/boycow.png">
           <button id="gridbutton">Learn More</button>
           </div>
           <div id="learngriditem">
-          <img src="images/moo.png">
+          <img src="images/goatpet.png">
           <button id="gridbutton">Learn More</button>
           </div>
+      </section>
 
+      <section id="ourstory">
+        <article class="abtimg">
+          <img src="images/cock.png">
+        </article>
+        <article class="abt">
+          <h2>OUR STORY</h2>
+          <p>A LOVING HOME FOR RESCUED FARM ANIMALS--MAINLY PIGS!</p>
+            <p>Many of our animals come to us after suffering the horrors of life on factory farms. Making the switch to a plant-based diet not only removes your support from the brutally cruel animal ag industry, but also offers a variety of health benefits like healing heart disease and type 2 diabetes too!  Find your best health ever, it's easier than you think!
+
+            Every dollar you spend is a vote for something. Vote for things that matter and that do good.  For your health, for the environment and for the animals, the best choice is vegan!
+          </p>
+          <p>
+            Visitors are welcome to come and spend time with the animals and explore the sanctuary on your own, on Friday, Saturday, and Sunday between the hours of  10AM til 3PM.  Tours are avaible Friday, Saturday, and Sunday at 11am and 1pm.  Visitors are welcome to join a tour if one is happening while you're here! Tours are free. Suggested donation to visit is only $10 per person, $30 for a family of 4
+          </p>
+        </article>
+      </section>
+
+      <section id="youtube">
+      <h2>CONNECT WITH US ON YOUTUBE!</h2>
+      <article id="yt">
+        <div>
+          <iframe src="https://www.youtube.com/embed/AukSlEU4JxQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe src="https://www.youtube.com/embed/FX3DTpyqfEM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </article>
       </section>
 
     </main>
@@ -101,8 +140,8 @@
           <li><a href="stories.html">Animal Stories</a></li>
         </ul>
       </nav>
-
     </footer>
-    <script src="lib/main.js"></script>
+
+    <script src="main.js"></script>
   </body>
 </html>

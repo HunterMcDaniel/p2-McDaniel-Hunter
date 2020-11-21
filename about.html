@@ -11,17 +11,59 @@
     <header>
       <img src="images/logor.png">
       <nav>
-        <ul>
+        <ul id="topnav">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="visit.html">Visit Us</a></li>
+          <li class="has-submenu">
+            <a href="visit.html">Visit Us</a>
+            <div class="menudrop condensed">
+              <ul class="visitmenu">
+                <li><a href="…">Photo Gallery</a></li>
+                <li><a href="…">Schedule a Visit</a></li>
+              </ul>
+            </div>
+          </li>
           <li><a href="stories.html">Animal Stories</a></li>
         </ul>
       </nav>
     </header>
     <!-- Main Section -->
   <main>
+    <section id="banner">
+      <img src="images/farmbg.png">
+      <button id="learnbutton">Learn More</button>
+      <h2>ABOUT US</h2>
+      <h4>Encouraging Compassion<br>Inspiring Change</h4>
+    </section>
+    <section id="abtgrid">
+      <article class="abt">
+        <h2>ABOUT US</h2>
+        <p>Rooterville Animal Sanctuary , located in Melrose, FL , provides a safe and compassionate refuge to rescued farm animals. We provide them all with a healthy diet and  comfy home filled with love and good care. Our animal residents, which we kindly refer to as ambassadors , are the lucky ones who have come here from all sorts of situations but primarily as the result of abuse, abandonment and neglect.  They include pot-bellied pigs, farm pigs, cows, goats, turkeys, chickens,  and a few dogs and cats.  (Ginger and Gracie the Chiweenie sisters are the BOSSES of Rooterville and steal the show from the pigs!)   Rooterville Animal Sanctuary currently provides a beautiful home to  nearly 400 rescued animals.
+        </p>
+        <p>
+          Visitors are welcome to come and spend time with the animals and explore the sanctuary on your own, on Friday, Saturday, and Sunday between the hours of  10AM til 3PM.  Tours are avaible Friday, Saturday, and Sunday at 11am and 1pm.  Visitors are welcome to join a tour if one is happening while you're here! Tours are free. Suggested donation to visit is only $10 per person, $30 for a family of 4
+        </p>
+      </article>
+      <article class="abtimg">
+        <img src="images/cock.png">
+      </article>
+    </section>
+
+    <section id="abtimggrid">
+      <div id="abtgriditem">
+      <img src="images/moo.png">
+      <button id="gridbutton">Learn More</button>
+      </div>
+      <div id="abtgriditem">
+      <img src="images/pinkpig.png">
+      <button id="gridbutton">Learn More</button>
+      </div>
+      <div id="abtgriditem">
+      <img src="images/goatie.png">
+      <button id="gridbutton">Learn More</button>
+      </div>
+    </section>
   </main>
   <!-- Footer -->
   <footer>
@@ -36,6 +78,6 @@
     </nav>
 
   </footer>
-  <script src="lib/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
