@@ -308,6 +308,124 @@ footer{
   padding: 1%;
 
 }
+
+/* visit stuff */
+
+#btngrpitem img{
+  max-width: 100%;
+}
+
+#btngrpitem {
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --lightgray: #efefef;
+  --blue: steelblue;
+  --white: #fff;
+  --black: rgba(0, 0, 0, 0.8);
+  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: inherit;
+}
+
+
+.btn-group {
+  margin-top: 3%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.open-modal {
+  font-weight: bold;
+  background: var(--blue);
+  color: var(--white);
+  padding: 0.75rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+#btngrpitem{
+  padding: 1.5%;
+}
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--black);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 5px;
+  background: var(--white);
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+.modal-header,
+.modal-footer {
+  background: var(--lightgray);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header .close-modal {
+  font-size: 1.5rem;
+}
+
+.modal p + p {
+  margin-top: 1rem;
+}
+
 /***** media queries******/
 
 @media (min-width: 750px) {
