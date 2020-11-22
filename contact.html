@@ -11,12 +11,22 @@
     <header>
       <img src="images/logor.png">
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="visit.html">Visit Us</a></li>
-          <li><a href="stories.html">Animal Stories</a></li>
+        <ul id="topnav">
+          <li id="topnav-label"><a href="index.html">Home</a></li>
+          <li id="topnav-label"><a href="about.html">About Us</a></li>
+          <li id="topnav-label"><a href="contact.html">Contact Us</a></li>
+          <li id="topnav-label" class="has-submenu">
+            <a href="visit.html">Visit Us</a>
+            <div class="menudrop condensed">
+              <ul class="visitmenu">
+                <li><a href="…">Photo Gallery</a></li>
+                <li><a href="…">Schedule a Visit</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="topnav-label"><a href="stories.html">Animal Stories</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- Main Section -->
   <main>
@@ -34,6 +44,6 @@
     </nav>
 
   </footer>
-  <script src="lib/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
