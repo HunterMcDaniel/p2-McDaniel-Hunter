@@ -132,11 +132,11 @@ nav ul li{
 
 
 #banner button{
-  width: 30%;
-  padding: 2% 1% 2% 1%;
+  width: 25%;
+  padding: 1.5% .7% 1.5% .7%;
   position: absolute;
   left: 8%;
-  top: 72%;
+  top: 70%;
   font-size: 1em;
   background-color: lightblue;
 }
@@ -146,7 +146,7 @@ nav ul li{
   width: 40%;
   position: absolute;
   left: 8%;
-  top: 20%;
+  top: 17%;
 }
 
 #banner h4{
@@ -158,11 +158,11 @@ nav ul li{
 }
 
 #banner p{
-  font-size: .8em;
+  font-size: .6em;
   width: 40%;
   position: absolute;
   left: 8%;
-  top: 60%;
+  top: 55%;
 }
 
 #banner{
@@ -461,7 +461,7 @@ button {
 
 @media (min-width: 750px) {
   #banner h2{
-    font-size: 3.8em;
+    font-size: 3.6em;
     width: 40%;
     position: absolute;
     left: 8%;
@@ -473,7 +473,7 @@ button {
     width: 40%;
     position: absolute;
     left: 8%;
-    top: 45%;
+    top: 37%;
   }
 
   iframe{
@@ -498,7 +498,15 @@ button {
     width: 40%;
     position: absolute;
     left: 8%;
-    top: 45%;
+    top: 39%;
+  }
+
+  #banner p{
+    font-size: 1em;
+    width: 40%;
+    position: absolute;
+    left: 8%;
+    top: 55%;
   }
 
   #abtgrid h2{
