@@ -458,6 +458,15 @@ button {
   margin-top: 1rem;
 }
 
+  #all{
+    padding: 8%;
+  }
+
+ #map{
+   text-align: center;
+   padding-bottom: 5%;
+ }
+
 /***** media queries******/
 
 @media (max-width: 450px) {

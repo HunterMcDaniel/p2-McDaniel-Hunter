@@ -64,3 +64,29 @@ document.addEventListener("keyup", e => {
     document.querySelector(".modal.is-visible").classList.remove(isVisible);
   }
 });
+
+// weather apiResult
+
+var weatherContainer = document.querySelectorAll('#all h3 span');
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var apiResult = JSON.parse(this.responseText);
+
+        console.log(apiResult);
+
+        // var cityName = document.createTextNode(apiResult.name.cityName);
+        // textContainer[0].appendChild(cityName);
+
+        weatherContainer[0].innerHTML = apiResult.name;
+        weatherContainer[1].innerHTML = apiResult.weather[0].description;
+
+console.log(apiResult.weather[0]);
+
+console.log(apiResult);
+
+    }
+};
+xmlhttp.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=32601,us&appid=6efff70fe1477748e31c17d1c504635f', true);
+xmlhttp.send();
