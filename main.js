@@ -17,6 +17,20 @@ for( i = 0; i < menuDrop.length; i ++){
     menuDrop[i].addEventListener("mouseleave", toggleDropdown)
 }
 
+
+
+
+//hamburger
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 // pop up
 
 

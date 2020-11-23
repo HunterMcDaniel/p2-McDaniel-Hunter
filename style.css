@@ -62,7 +62,7 @@ a:visited{
 .visitmenu {
   margin-top: 4%;
   padding-left: 0;
-  background-color: #dde1e7;
+  background-color: lightgray;
 }
 
 .menudrop{
@@ -74,7 +74,7 @@ a:visited{
   display: block;
   width: 100%;
   padding: 5%;
-  border: 2px solid #fff;
+  border: 2px solid white;
   box-sizing: border-box;
 }
 
@@ -82,6 +82,54 @@ nav ul li{
   display: inline-block;
   padding: 2%;
 }
+
+/*hamburger*/
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: lightblue;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 3% 3%;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: lightyellow;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: darkgreen;
+  color: white;
+}
+
+
+
+
 
 #banner button{
   width: 30%;
@@ -232,8 +280,8 @@ position: relative;
 }
 
 iframe{
-  width: 400px;
-  height: 250px;
+  width: 185px;
+  height: 225px;
 }
 
 /*footer*/
@@ -428,6 +476,11 @@ button {
     top: 45%;
   }
 
+  iframe{
+    width: 285px;
+    height: 225px;
+  }
+
 
 }
 
@@ -467,9 +520,17 @@ button {
   }
 
   iframe{
-    width: 550px;
+    width: 450px;
     height: 300px;
   }
 
 
+}
+
+@media (min-width: 1150px) {
+
+  iframe{
+    width: 550px;
+    height: 300px;
+  }
 }
