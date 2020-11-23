@@ -100,7 +100,7 @@ nav ul li{
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 3% 3%;
+  padding: 3% 8%;
   text-decoration: none;
   font-size: 1em;
   display: block;
@@ -111,6 +111,7 @@ nav ul li{
   background: black;
   display: block;
   position: absolute;
+  height: 100%;
   right: 0;
   top: 0;
 }
@@ -494,6 +495,37 @@ button {
     left: 8%;
     top: 43%;
   }
+
+  #ourstory{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #ourstory article{
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+  }
+
+  #ourstory h2{
+    padding-bottom: 1%;
+    padding-left: 0%;
+    font-size: 1.5em;
+  }
+
+  #ourstory p{
+    padding-left: 0%;
+    padding-bottom: 1.5%;
+    font-size: .5em;
+  }
+
+  #ourstory img{
+    max-width: 100%;
+    padding-right: 15%;
+  }
+
 }
 
 @media (min-width: 750px) {
