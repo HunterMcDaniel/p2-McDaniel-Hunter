@@ -254,13 +254,13 @@ position: relative;
 #ourstory h2{
   padding-bottom: 1%;
   padding-left: 4%;
-  font-size: 1.9em;
+  font-size: 1.5em;
 }
 
 #ourstory p{
   padding-left: 4%;
   padding-bottom: 1.5%;
-  font-size: .9em;
+  font-size: .5em;
 }
 
 #ourstory img{
@@ -406,8 +406,8 @@ button {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .modal {
   position: fixed;
-  top: 30%;
-  left: 20%;
+  top: 13%;
+  left: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -426,7 +426,8 @@ button {
 
 .modal-dialog {
   position: relative;
-  max-width: 800px;
+  margin: 0 auto;
+  max-width: 500px;
   max-height: 80vh;
   border-radius: 5px;
   background: white;
@@ -476,9 +477,49 @@ button {
     top: 37%;
   }
 
+  #ourstory h2{
+    padding-bottom: 1%;
+    font-size: 1.8em;
+  }
+
+  #ourstory p{
+    font-size: .67em;
+  }
+
   iframe{
     width: 285px;
     height: 225px;
+  }
+
+  .modal {
+    position: fixed;
+    top: 16%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: black;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+  }
+
+  .modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal-dialog {
+    position: relative;
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 80vh;
+    border-radius: 5px;
+    background: white;
+    overflow: auto;
+    cursor: default;
   }
 
 
@@ -502,7 +543,7 @@ button {
   }
 
   #banner p{
-    font-size: 1em;
+    font-size: .8em;
     width: 40%;
     position: absolute;
     left: 8%;
@@ -524,7 +565,7 @@ button {
   }
 
   #ourstory p{
-    font-size: 1.2em;
+    font-size: .8em;
   }
 
   iframe{
@@ -532,10 +573,36 @@ button {
     height: 300px;
   }
 
+/*pop up*/
+  .modal-dialog {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+    max-height: 80vh;
+    border-radius: 5px;
+    background: white;
+    overflow: auto;
+    cursor: default;
+  }
+
 
 }
 
 @media (min-width: 1150px) {
+
+  #banner p{
+    font-size: 1em;
+    width: 40%;
+    position: absolute;
+    left: 8%;
+    top: 55%;
+  }
+
+  #ourstory p{
+    font-size: 1.2em;
+  }
+
+
 
   iframe{
     width: 550px;
