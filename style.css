@@ -139,7 +139,7 @@ nav ul li{
   padding: 1.5% .7% 1.5% .7%;
   position: absolute;
   left: 8%;
-  top: 70%;
+  top: 65%;
   font-size: 1em;
   background-color: lightblue;
 }
@@ -157,7 +157,7 @@ nav ul li{
   width: 40%;
   position: absolute;
   left: 8%;
-  top: 30%;
+  top: 36%;
 }
 
 #banner p{
@@ -171,7 +171,7 @@ nav ul li{
 #banner{
 padding-top: 1%;
 margin: 0 auto;
-width: 92%;
+width: 100%;
 position: relative;
 }
 
@@ -562,7 +562,7 @@ button {
     width: 40%;
     position: absolute;
     left: 8%;
-    top: 33%;
+    top: 42%;
   }
 
   #ourstory h2{
@@ -642,6 +642,14 @@ button {
 }
 
 @media (min-width: 950px) {
+
+  #banner{
+    padding-top: 1%;
+    margin: 0 auto;
+    width: 92%;
+    position: relative;
+  }
+
   #banner h2{
     font-size: 4em;
     width: 40%;
@@ -655,7 +663,7 @@ button {
     width: 40%;
     position: absolute;
     left: 8%;
-    top: 39%;
+    top: 40%;
   }
 
   #banner p{
